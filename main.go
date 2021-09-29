@@ -57,6 +57,7 @@ func main() {
 
 	if !*outputDumpFlag {
 		out.csv.Flush()
+		fmt.Printf("file saved to: %s\n", *outputCSVFlag)
 	}
 }
 
