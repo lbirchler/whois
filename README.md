@@ -3,7 +3,7 @@ Fast bulk WHOIS lookup
 
 # Installation
 ```
-go get github.com/lbirchler/whois@latest
+go get github.com/lbirchler/whois
 ```
 
 # Usage
