@@ -9,7 +9,7 @@ go get github.com/lbirchler/whois
 # Usage
 **Pipe a list of domain names into the tool to generate a csv file with whois data for each domain**
 ```
-$ cat domains.txt | ./whois
+$ cat domains.txt | whois
 ```
 results:
 ```
@@ -43,7 +43,7 @@ registrarAbuseContactPhone
 ```
 speed:
 ```
-$ time cat domains.txt | ./whois && wc -l domains.txt && wc -l whois.csv
+$ time cat domains.txt | whois && wc -l domains.txt && wc -l whois.csv
 
 real    0m11.942s
 user    0m5.609s
@@ -53,7 +53,7 @@ sys     0m0.800s
 ```
 **Pass -d flag to print raw whois data to stdout**
 ```
-$ cat domains.txt | ./whois -d
+$ cat domains.txt | whois -d
    Domain Name: GOOGLE.COM
    Registry Domain ID: 2138514_DOMAIN_COM-VRSN
    Registrar WHOIS Server: whois.markmonitor.com
